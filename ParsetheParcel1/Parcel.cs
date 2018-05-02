@@ -75,7 +75,8 @@ namespace ParsetheParcel1
             }
             catch (Exception ex)
             {
-                throw ex;
+                Console.WriteLine("Error occured {0}", ex.Message);
+                throw;
             }
             return Price;
         }
